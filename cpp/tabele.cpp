@@ -26,8 +26,28 @@ void sumujLiczby (int tab[], int ile){
 }    
 
 void najmniejsza (int tab[], int ile){
-    ; //funkcja znajduje i drukuje najmniejsza liczbe z tabeli
+    int min = tab[0];
+    int i = 0;
+    for (i = 1; i < ile; i++){
+        if (min > tab[i])
+            min = tab[i];
+        }
+        cout << "Najmniejsza: "<< min << endl;
     }
+    
+    void ile5(int tab[], int ile){
+        int i = 0;
+        int licznik5=0;
+        int parzyste=0;
+        for (i = 0; i < ile; i++){
+            if (tab[i] %5 == 0)
+            licznik5++;
+        }
+        if (tab[i] %2 == 0)
+            parzyste++;
+        cout << "Liczby podzielne przez 5: "<< licznik5 << endl;
+        cout << "Parzyste:"<< parzyste << endl;
+}
 int main(int argc, char **argv)
 
 {
@@ -39,6 +59,8 @@ int main(int argc, char **argv)
     
     pobierzLiczby(liczby, rozmiar);
     sumujLiczby(liczby, rozmiar);
+    najmniejsza(liczby, rozmiar);
+    ile5 (liczby, rozmiar);
 	return 0;
 }
 

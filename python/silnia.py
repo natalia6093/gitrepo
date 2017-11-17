@@ -17,8 +17,14 @@ def main(args):
     # pobierz od uzytkownika liczbę naturalną 
     # i przypisz ja do zmiennej n
     # wywołajfunkcje silnia it() z odpowiedznim argumentem
-    n = int(input('Podaj liczbę naturalną'))
-    print(silnia_it(n))
+    n = int(input('Podaj liczbę naturalną: '))
+    assert type (n) == int
+    assert silnia_it (0) == 1
+    assert silnia_it (1) == 1
+    assert silnia_it (2) == 2
+    assert silnia_it (3) == 6
+    
+    #  print('Silnia dla{:d}: {:d}'. format(n, silnia_it))
     return 0
 
 if __name__ == '__main__':

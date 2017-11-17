@@ -8,17 +8,23 @@
 
 using namespace std;
 
-int silnia_it(n);
+int silnia (int n)
+{
+	int wynik = 1;
+    for (int i = 1; i <= n ; i++)
+    {
+        wynik = wynik * i;
+    }
+    return wynik;
+}  
 
 int main(int argc, char **argv)
-{
-	int wynik = 1
-    for (int i = 1; i <= int n ; i++){
-        wynik = wynik * 1
-        }
-    return wynik;
-    
-    
+ {
+     int n;
+     cout << "podaj składnik silni:"<< endl;
+     cin >> n;
+     cout << "Silnia" << silnia(n)<< endl;
+         
 	return 0;
 }
 

@@ -23,12 +23,24 @@ def losuj(ileliczb, maksliczb):
 def minimum(lista):
     min = lista[0]
     for i, el in enumerate(lista):
-        print(i, el)
-    return 0
+        if el < min:
+            min = el
+    return min
     
+    
+def maximum(lista):
+    max = lista[0]
+    for i, el in enumerate(lista):
+        if el > max:
+            max = el
+    return max
+        
 def main(args):
     lista = losuj (20, 50)
+    assert minimum([7, 5, 2, 1, 7]) == 1
+    assert maximum([7, 5, 2, 1, 7]) == 7
     print ("Min:", minimum(lista))
+    print ("Max: ", maximum(lista))
     print (lista)
     return 0
 

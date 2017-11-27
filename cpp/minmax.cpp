@@ -3,31 +3,53 @@
 
  */
 
-
-#include<iostream>
-#include<cstdlib>
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
 using namespace std;
- 
 int main()
 {
-    int n, min, pom;
+    srand( time( NULL ) );
+    int tab[ 6 ];
+    int x;
+    int min, max;
  
-        cout<<"Ile liczb chcesz wczytać? ";
-        cin>>n;
- 
-        cin>>min; //pierwszą liczbę przypisujemy do zmiennej min
- 
-        for(int i=1;i<n;i++) //wczytanie pozostałych n-1 liczb
+    cout << "Wylosowane liczby: " << endl;
+    for( int i = 0; i < 6; i++ )
+    {
+        do
         {
-                cin>>pom;
-                if(min>pom)
-                //podmieniamy, gdy znajdziemy mniejszą niz min
-                        min = pom; 
+            x =( rand() % 49 ) + 1;
         }
+        while(( tab[ 0 ] == x )||( tab[ 1 ] == x )||( tab[ 2 ] == x )||( tab[ 3 ] == x )||( tab[ 4 ] == x )||( tab[ 5 ] == x ) );
  
-        cout<<"Najmniejszą wczytaną liczbą jest "<<min<<endl;
+        tab[ i ] = x;
  
-        system("pause");
-        return 0;
+        cout << tab[ i ] << " ";
+    }
+ 
+     min = tab[0];
+ 
+    for(int i=0; i<6; i++)
+    {
+        if(min>tab[i])
+        {
+            min = tab[i];
+        }
+    }
+ 
+    max = tab[0];
+ 
+    for(int i=0; i<6; i++)
+    {
+        if(max<tab[i])
+        {
+            max = tab[i];
+        }
+    }
+    cout<<endl;
+    cout<<"najmniejsza liczba to: "<<min<<endl;
+    cout<<"najwieksza liczba to: "<<max<<endl;
+    return 0;
 }
 

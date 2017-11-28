@@ -14,7 +14,11 @@ int main()
     int x;
     int min, max;
  
+<<<<<<< HEAD
     cout << "Wylosowane liczby: " << endl;
+=======
+    cout << "Wylosowane liczby: " << endl << endl;
+>>>>>>> 0c376cb287dbb92b0c528b2c92c26c9886a540dd
     for( int i = 0; i < 6; i++ )
     {
         do
@@ -22,6 +26,7 @@ int main()
             x =( rand() % 49 ) + 1;
         }
         while(( tab[ 0 ] == x )||( tab[ 1 ] == x )||( tab[ 2 ] == x )||( tab[ 3 ] == x )||( tab[ 4 ] == x )||( tab[ 5 ] == x ) );
+<<<<<<< HEAD
  
         tab[ i ] = x;
  
@@ -30,6 +35,16 @@ int main()
  
      min = tab[0];
  
+=======
+ 
+        tab[ i ] = x;
+ 
+        cout << tab[ i ] << " ";
+    }
+ 
+     min = tab[0];
+ 
+>>>>>>> 0c376cb287dbb92b0c528b2c92c26c9886a540dd
     for(int i=0; i<6; i++)
     {
         if(min>tab[i])
@@ -52,4 +67,5 @@ int main()
     cout<<"najwieksza liczba to: "<<max<<endl;
     return 0;
 }
+ 
 

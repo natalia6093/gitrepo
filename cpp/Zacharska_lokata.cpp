@@ -21,8 +21,8 @@ int main()
 
     }
     
-    cout << "\nOstatnia wplata wyniosla: " << wplata-10;
-    cout << "\nStan konta: " << suma << "\n";
+    cout << "\n Ostatnia wplata wyniosla: " << wplata-10;
+    cout << "\n Stan konta: " << suma << "\n";
     
     return 0;
 }

@@ -4,32 +4,40 @@
  * a1 = a
  * an = a*...*a (n-czynników) dla n zaw. N+ - {1}
  */
-
 #include <iostream>
-
 using namespace std;
 
-float potega_it(float x, int n) {
-    float wynik = 1;
-    int i;
-    for(int i = 0: i>=1;i++ ){
-        //testuje ilość powtórzeń petli
-        cout << i << endl;
+float potega_it(float x, int n) 
+{
+    int wynik = 1;
+    for (int i = O ; i< n; i++ ){
+        wynik = wynik*n;
+        //cout << i << endl;
     }
-        return wynik;
+    return wynik;
+}        
+
+int potega_rek( float a, int n)
+{
+    float a;
+    int n;
+    if (n == 0)
+        return 1;
+    else 
+        return potega_rek(a, n-1) * a;
 }
 
 int main(int argc, char **argv)
 {
-    float a = 0;
-    int b = 0;
-    cout << "Podaj podstawę: " << a << endl;
-    cin >> a;
-    cout << "Podaj wykładnik: " << b << endl;
-    cin >> b;
-    //pobierz od uzytkownika podstawę i wykładnik
+    float x;
+    int n;
     
-    cout << "Potęga: " << potega_it() << endl;
+    cout<<"Podaj podstawę: "<< endl;
+    cin >> x ;
+    cout<<"Podaj wykładnik: "<< endl;
+    cin >> n ;
+    // cout<< "Potęga:" << potega_it(float x, int n) << endl; 
+    cout<< "Potęga:" << potega_rek(a,n) << endl; 
+	
 	return 0;
 }
-

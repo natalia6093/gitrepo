@@ -4,40 +4,38 @@
  * a1 = a
  * an = a*...*a (n-czynników) dla n zaw. N+ - {1}
  */
+
 #include <iostream>
+
 using namespace std;
 
-float potega_it(float x, int n) 
+float potega_it(float x, int n)
 {
-    int wynik = 1;
-    for (int i = O ; i< n; i++ ){
-        wynik = wynik*n;
-        //cout << i << endl;
+    float wynik = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        wynik = wynik * x;
     }
     return wynik;
-}        
+}
 
-int potega_rek( float a, int n)
-{
-    float a;
-    int n;
-    if (n == 0)
+int potega_rek(int x, int n)
+{    
+    if (x == 0)
+        return 0;
+    else if (n == 0)
         return 1;
-    else 
-        return potega_rek(a, n-1) * a;
+    return potega_rek(x, n - 1) * x;
 }
 
 int main(int argc, char **argv)
 {
-    float x;
     int n;
-    
-    cout<<"Podaj podstawę: "<< endl;
-    cin >> x ;
-    cout<<"Podaj wykładnik: "<< endl;
-    cin >> n ;
-    // cout<< "Potęga:" << potega_it(float x, int n) << endl; 
-    cout<< "Potęga:" << potega_rek(a,n) << endl; 
-	
+    float x;
+    cout << "Podaj podstawe potęgi: " << endl;
+    cin >> x;
+    cout << "Podaj wykładnik potęgi: " << endl;
+    cin >> n;
+    cout << "Potęga: " << potega_rek(x, n) <<endl;
 	return 0;
 }

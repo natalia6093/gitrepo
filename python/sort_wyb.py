@@ -4,51 +4,28 @@
 #  sort_wyb.py
 #  
 
-
-import random
-
-
-def losuj(ileliczb, maksliczb):
-
-    liczby = []  # pusta lista
-
-    ile = 0  # ilość unikalnych liczb
-
-    # for i in range(ileliczb):
-    while ile < ileliczb:
-        liczba = random.randint(0, maksliczb)
-        if liczby.count(liczba) == 0:
-            liczby.append(liczba)
-            ile += 1
-
-    return liczby
+from random import randint
 
 
-def zamien(a, b):
-   # tmp = a;
-    a = b
-   # b = tmp;
-   
-   
-def sort_wyb(tab, n):
-	tab = []
-	print(" ------------- Sortowanie przez wybieranie ---------------")
-	for i in range(0, n):
-		k = i
-		print(i)
-		for j in range(i + 0, n):
-			#print(j)
-			if tab[j] < tab[k]:
-				k = j
-        
-	# zamien(tab[i], tab[k])
+def wypelnij(lista, ile, maks):
+    for i in range(ile):
+        lista.append(randint)
+    return lista
+
+
+def sort_wyb(lista):
+    for i in range(len(lista)):
+        k = i 
+        for j in range(i + 1, len(lista)):
+            if lista[j] < lista[k]:
+                k = j
+        lista[i], lista[k] = lista[k], lista[i]
+    return lista
+
 
 def main(args):
-    ile = 10
-    tab = [ile]
-    maksliczb = int(input('Podaj maksymalną liczbe: '))
-    print(losuj(ile, maksliczb))
-    print(sort_wyb(tab, ile))
+    lista = []
+    print(wypelnij(lista, 10, 20))
     return 0
 
 if __name__ == '__main__':

@@ -30,7 +30,7 @@ void zamien(int &a, int &b){
     b = tmp;
 }
 
-void sort_wyb(int t[], int n){
+void sort_bable(int t[], int n){
     cout << "------------Sortowanie bąbelkowe ----------------"<< endl;
     for(int i = 0; i < n; i++ ){
         for (int j = 0; j < n - 1 - i; j++){

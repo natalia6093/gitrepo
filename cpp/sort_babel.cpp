@@ -33,7 +33,10 @@ void zamien(int &a, int &b){
 void sort_wyb(int t[], int n){
     cout << "------------Sortowanie bąbelkowe ----------------"<< endl;
     for(int i = 0; i < n; i++ ){
-        for (int j = 0; j < n - 1 - i)
+        for (int j = 0; j < n - 1 - i; j++){
+                if (tab[j] > tab[j+1])
+                zamien(tab[j], tab[j+1]);
+        }
     }
 }
 

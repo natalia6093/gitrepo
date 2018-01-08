@@ -30,6 +30,17 @@ def wyszukiwanie_binarne(l, e):
 def wyszukiwanie_bin_rek(lewy, prawy, lista, el):
 
     if lewy > prawego:
+        return -1
+
+    srodek = floor((lewy + prawy) / 2)
+    if el == lista[srodek]:
+        return srodek
+
+    if el < lista[srodek]:
+        return wyszukiwanie_bin_rek()
+    else:
+        return wyszukiwanie_bin_rek()
+
 
 
 def main(args):

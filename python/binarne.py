@@ -20,15 +20,24 @@ def wyszukiwanie_binarne(l, e):
             prawy = srodek
         else:
             lewy = srodek + 1
+
+    if l[lewy] == e:
+        return lewy
+
     return -1
+
+
+def wyszukiwanie_bin_rek(lewy, prawy, lista, el):
+
+    if lewy > prawego:
 
 
 def main(args):
     lista = [4, 3, 7, 0, 2, 3, 1, 9, -4]
-    pass
-
-    el = 0
+    el = 2
     print (wyszukiwanie_liniowe(lista, el))
+    lista.sort()
+    print(lista)
     print (wyszukiwanie_binarne(lista, el))
 
     return 0

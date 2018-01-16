@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-16T10:05:51+01:00
+
+====== złożonośc ======
+Created wtorek 16 styczeń 2018
+
+Przez złozoność rozumiemy ilość czasu niezbędnego do rozwiązania problemu w zależności od liczby danych wejściowych. Złożoność czasowa jest zatem pewną funkcją liczby danych wejściowych:
+
+Złożoność czasową wyrażamy albo w jednostkach czasu, albo w liczbie operacji dominujących, które należy wykonać dla n danych, aby otrzymać rozwiązanie problemu. Operacja dominująca jest operacją, której wykonanie bezpośrednio wpływa na czas wykonania całego algorytmu. Podawanie złożoności czasowej w jednostkach czasu jest niewygodne, ponieważ wynik zależy od szybkości komputera, na którym dokonano pomiarów - trudno takie wyniki odnieść do innych komputerów, szczególnie wyposażonych w inne procesory, gdzie czas wykonania podobnych operacji może znacznie się różnić. Dlatego częściej złożoność czasową wyrażamy w liczbie operacji dominujących, gdyż każdy komputer, bez względu na swoje własności, operacje te musi wykonać. Dzięki temu wynik uniezależniamy od faktycznej szybkości komputerów
+
+
+Złożoność pamięciowa określa z kolei liczbę komórek pamięci, która będzie zajęta przez dane i wyniki pośrednie tworzone w trakcie pracy algorytmu.
+Rząd wielkości

@@ -2,8 +2,16 @@
 # -*- coding: utf-8 -*-
 
 
-def konwersja1():
+def konwersja1(liczba10, podstawa):
     """ Funkcja zamienia liczbe dziesietną na system o podanej podstawie"""
+    liczba = []  # lista reszt
+    while liczba10 != 0:
+        reszta = liczba10 % podstawa  # obliczanie reszt z dzielenia
+        if reszta > 9:
+            reszta = chr(reszta + 55)
+        liczba.append(str(reszta))
+        liczba10 = int(liczba10 / podstawa)
+    return liczba
 
 
 def dec2other():

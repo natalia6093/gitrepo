@@ -11,7 +11,9 @@ def konwersja1(liczba10, podstawa):
             reszta = chr(reszta + 55)
         liczba.append(str(reszta))
         liczba10 = int(liczba10 / podstawa)
-    return liczba
+
+    liczba.reverse()  # odwrócenie kolejności elementów! ! !
+    return "".join(liczba)
 
 
 def dec2other():

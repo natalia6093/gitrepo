@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-30T10:28:54+01:00
+
+====== Kompresja ======
+Created wtorek 30 styczeń 2018
+
+Zmniejszanie ilości danych, żeby informacje istotne(!) zachować.
+
+
+Rodzaje:
+1) kompresja stratna
+a) dźwięk = MP3, OGG
+b) obraz= JPG, PNG
+c)

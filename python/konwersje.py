@@ -32,19 +32,26 @@ def konwersja2(liczba, podstawa):
     liczba10 = 0
     potega = len(liczba) - 1
     for cyfra in liczba:
-        if not cyfrqa.isdigit():
-            liczba10 += ord(cyfra.upper()) - 55 * (Podstawa ** potega)
+        if not cyfra.isdigit():
+            liczba10 += (ord(cyfra.upper()) - 55) * (Podstawa ** potega)
         else:
-        liczba10 += int(cyfra) * (podstawa ** potega)
+            liczba10 += int(cyfra) * (podstawa ** potega)
         potega -= 1
+    return liczba10
 
 
 def other2dec():
     """Funkcja polbiera podstawę i liczbe od uzytkownika"""
     podstawa = int(input("Podaj podstawę: "))
     liczba = int(input("Podaj liczbę: "))
+    for i in liczba:
+        if i.isdigit():
+            cyfra = int(i)
+        else:
+            cyfra = ord(i.upper()) - 55
+        if cyfra > podstawa - 1:
+            print("Podałeś niedopuszczalną cyfrę!")
 
-    print(konwersja2)
 
 
 def main(args):

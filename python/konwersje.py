@@ -16,18 +16,6 @@ def konwersja1(liczba10, podstawa):
     return "".join(liczba)
 
 
-    def konwersja2(liczba, podstawa):
-        """ Funkcja konwertuje liczbe w  system o podanej podstawie na system dziesiętny"""
-
-        pass
-
-
-def other2dec():
-    """Funkcja polbiera podstawę i liczbe od uzytkownika"""
-
-    print(konwersja2)
-
-
 def dec2other():
     """Funkcja pobiera liczbę i podstawe od użytkownika """
     liczba = int(input("Podaj liczbę: "))
@@ -36,6 +24,27 @@ def dec2other():
         podstawa = int(input("Podaj podstawę: "))
     print("Wynik konwersji: {}(10) = {} ({}) ". format(
         liczba, konwersja1(liczba, podstawa), podstawa))
+
+
+def konwersja2(liczba, podstawa):
+    """ Funkcja konwertuje liczbe w  system o podanej podstawie na system dziesiętny"""
+
+    liczba10 = 0
+    potega = len(liczba) - 1
+    for cyfra in liczba:
+        if not cyfrqa.isdigit():
+            liczba10 += ord(cyfra.upper()) - 55 * (Podstawa ** potega)
+        else:
+        liczba10 += int(cyfra) * (podstawa ** potega)
+        potega -= 1
+
+
+def other2dec():
+    """Funkcja polbiera podstawę i liczbe od uzytkownika"""
+    podstawa = int(input("Podaj podstawę: "))
+    liczba = int(input("Podaj liczbę: "))
+
+    print(konwersja2)
 
 
 def main(args):

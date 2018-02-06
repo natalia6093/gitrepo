@@ -5,26 +5,40 @@ Creation-Date: 2018-01-30T10:28:54+01:00
 ====== Kompresja ======
 Created wtorek 30 styczeń 2018
 
-Zmniejszanie ilości danych, żeby informacje istotne(!) zachować.
+Zmniejszanie rozmiaru czegoś w celu zachowania intotnych informacji
+kompresja to np odtwarzanie filmów itp
 
+Rodzaje kompresji
+1. KOmpresja stratna 
+a) dżwięk - MP3, OGG(usunięte niesłyszalne dla ucha człowieka dźwieki )
+b) obraz - JPG, PNG
+c ) filmy - MPEG1,MPG2,MPG4, .avi, .mp4
 
-Rodzaje:
-1) kompresja stratna
-a) dźwięk = MP3, OGG
-b) obraz= JPG, PNG
+Jakość kompresji zależy od przepływości (Bit Rejt- ilość informacji w jednostce czasu ) b/s, Kb/s, Mb/s.  Komórki mają gorszą przepłyność
 
-**DivX**- stratna metoda kompresji obrazu filmowego, w nowszych wersjach zgodna z MPEG-4 część 2, pozwalającą zapisać na zwykłej płycie kompaktowej filmy o długości ok. 90 min i jakości niewiele ustępującej DVD-Video. Wykorzystywana także do przesyłania filmów przez Internet.Do odtwarzania wymagany jest układ komputerowy posiadający odpowiednio wydajny procesor do dekodowania programowego (np. komputer osobisty lub konsola) lub dekoder sprzętowy (np. w niektórych odtwarzaczach DVD).
+DivX - DO KODOWANIA FILMÓW I OBRAZÓW DAWNIEJ 
+Xvid - 
 
+Download-  przepływnośc w momencie pobierania informacji
+Upload- max przepływność
 
-**Bitrate-Przepływność** – ilość informacji (danych) transmitowana w jednostce czasu poprzez kanał komunikacyjny.Przepływność mierzona jest w bitach na sekundę (b/s lub bps, od ang. bits per second) lub, rzadko, w bajtach na sekundę (B/s lub Bps) i ich wielokrotnościach: kb/s, Mb/s, Gb/s, kB/s, MB/s. W praktyce spotykane są zarówno prefiksy dziesiętne (k = 1000, M = 1 000 000), jak i binarne (K = 1024, M = 1 048 576).Ze względu na tę samą jednostkę przepływność jest często mylnie utożsamiana z przepustowością. Ta pierwsza jest miarą chwilowego natężenia strumienia danych, natomiast ta druga stałym parametrem charakteryzującym tor lub kanał komunikacyjny.
+__Algorytm słownikowy__
 
-**Przykład algorytmu kompresji słownikowej:**
-The rain in Spain falls mainly on the plain.
-The rain <3,3> Sp<9,4>  falls m<11,3>ly on t<34,3> pl<15, 3>.
+The rain in Spain falls mainly on the plain. 
+The rain <3,3> Sp<9, 4> falls m <11,3>ly on t< 34, 3 > pl<15,3>. 
 
-6bitów+2bity=8bitów
+ <3- cofnij sie trzy znaki wcześniej,3- weź trzy znaki>
 
-33bajty / 44bajty * 100 = 75%
+6 bitów+2 bity = 8 bitów
+33 bajty / 44 bajty * 100 = ~ 75%
+
+Współczynnik kompresji
+Rc = Vk- wielkośc skompresowana / Vnk- nieskomresowana * 100
+100% - Rc — informacja o ile zmniejszył się kompresowany zbiór 
+
+Rc 7z=  218,4 kB /633,1 kB * 100 = 34,5 %
+
+Rc zip = 340,7 kB /633,1 kB * 100 = 54 %
 
 **Wzór ogólny na wspólczynnik kompresji:**
 

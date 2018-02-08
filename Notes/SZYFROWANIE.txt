@@ -16,3 +16,7 @@ Do szyfrowania szyfrogramu potrzebny jest:
 __Rodaje szyfrów:__
 **Podstawieniowe:**
 - SZYFR CEZARA
+
+__Przestawieniowe__
+Zapis tekstu w wierszach o ustalonej długości.
+Klucz to ilość kolumn, na które dzielimy tekst.

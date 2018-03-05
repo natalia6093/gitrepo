@@ -20,3 +20,24 @@ __Rodaje szyfrów:__
 __Przestawieniowe__
 Zapis tekstu w wierszach o ustalonej długości.
 Klucz to ilość kolumn, na które dzielimy tekst.
+
+
+HTTPS
+TSL
+
+**klucz publiczny i prywatny nalezy wegenetować, są nieodłączną parą.**
+**klucz publiczny**(znajomym, serwisom, instytucjom) służy do odczytywania to co szyfrujemy kluczem jesli ktoś wysyła coś do nas szyfruje klucz publicznym, ale my odbieramy prywatnym.
+**klucz prywatny** możemy generować sami.
+
+Pretty Good Privancy- narzędzia do szyfrowania poczty elektornicznej.
+NAjpopularniejszy algorytem do generowania jest algorytm RSA.
+
+Algorytm RSA opiera sie na parach dużych liczb pierwszych.
+
+Urząd certufikacji- podmiot, ktory wystawia certyfikat cfrowy. 
+Klucz publiczny  nie wystepuje w postaci jawnej, najczesciej sa zakaszowane za pomoca funkcji skrotu.
+Funkcje skrotu- przyporzadkowanie dowolnej liczbie. liczbe krotka posiadajaca staly rozmiar. Ma zagwarantowac, ze nie ma dwoch takich samych wiadomosci o tej samej liczbie.
+NAjczesciej wykorzystywane;
+CRC
+MDS
+SHA 

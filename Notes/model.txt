@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-05T11:59:54+01:00
+
+====== model ======
+Created poniedziałek 05 marzec 2018
+
+**Architektura von Neumanna** – pierwszy rodzaj architektury komputera, opracowanej przez Johna von Neumanna, Johna W. Mauchly’ego oraz Johna Presper Eckerta w 1945 roku. Cechą charakterystyczną tej architektury jest to, że dane przechowywane są wspólnie z instrukcjami, co sprawia, że są kodowane w ten sam sposób.
+
+W architekturze tej komputer składa się z czterech głównych komponentów:
+
+   - pamięci komputerowej przechowującej dane programu oraz instrukcje programu; każda komórka pamięci ma unikatowy identyfikator nazywany jej adresem
+	-jednostki sterującej odpowiedzialnej za pobieranie danych i instrukcji z pamięci oraz ich sekwencyjne przetwarzanie
+	-jednostki arytmetyczno-logicznej odpowiedzialnej za wykonywanie podstawowych operacji arytmetycznych.
+	-urządzeń wejścia/wyjścia służących do interakcji z operatorem
+
+Jednostka sterująca wraz z jednostką arytmetyczno-logiczną tworzą procesor.
+
+System komputerowy zbudowany w oparciu o architekturę von Neumanna powinien:
+
+	-mieć skończoną i funkcjonalnie pełną listę rozkazów
+	-mieć możliwość wprowadzenia programu do systemu komputerowego poprzez urządzenia zewnętrzne i jego przechowywanie w pamięci w sposób identyczny jak danych
+	-dane i instrukcje w takim systemie powinny być jednakowo dostępne dla procesora
+	-informacja jest tam przetwarzana dzięki sekwencyjnemu odczytywaniu instrukcji z pamięci komputera i wykonywaniu tych instrukcji w procesorze.
+
+Podane warunki pozwalają przełączać system komputerowy z wykonania jednego zadania (programu) na inne bez fizycznej ingerencji w strukturę systemu, a tym samym gwarantują jego uniwersalność.
+
+System komputerowy von Neumanna nie posiada oddzielnych pamięci do przechowywania danych i instrukcji. Instrukcje jak i dane są zakodowane w postaci liczb. Bez analizy programu trudno jest określić czy dany obszar pamięci zawiera dane czy instrukcje. Wykonywany program może się sam modyfikować traktując obszar instrukcji jako dane, a po przetworzeniu tych instrukcji – danych – zacząć je wykonywać.
+
+Model komputera wykorzystującego architekturę von Neumanna jest często nazywany przykładową maszyną cyfrową (PMC).
+
+**Rejestry procesora** – komórki pamięci o niewielkich rozmiarach  umieszczone wewnątrz procesora i służące do przechowywania tymczasowych wyników obliczeń, adresów lokacji w pamięci operacyjnej itd. Większość procesorów przeprowadza działania wyłącznie korzystając z wewnętrznych rejestrów, kopiując do nich dane z pamięci i po zakończeniu obliczeń odsyłając wynik do pamięci.
+**Szyna sterująca**- połączenie między jednostką centralną (CPU) a pamięcią oraz układem wejścia-wyjścia, którym przesyłane są sygnały z mikroprocesora, określające jaki rodzaj operacji ma wykonać układ współpracujący.
+**Szyna adresowa** - połączenie między jednostką centralną (CPU) a pamięcią lub urządzeniem z interfejsem typu MMIO służące do przekazywania adresów fizycznych, z których jednostka centralna będzie wykonywała odczyty lub do których będzie realizowała zapisy danych.
+**Szyna danych** (ang. data bus) – część magistrali komunikacyjnej odpowiedzialna za transmisję właściwych danych, w odróżnieniu od danych adresowych (za co odpowiedzialna jest szyna adresowa) czy sygnałów sterujących (szyna sterująca). Podział taki ma sens jedynie dla magistral, w których taka część jest wydzielona, czyli na ogół dla magistral równoległych.Szerokość szyny danych (liczba linii danych, a więc równolegle przesyłanych bitów) oraz częstotliwość z jaką dane mogą być na nią podawane (najczęściej jest to częstotliwość cyklu zegarowego magistrali) określają maksymalną szybkość transmisji danych na tej magistrali.
+Pamięć tylko do odczytu, **ROM** (od ang. read-only memory) – pamięć półprzewodnikowa urządzenia elektronicznego, w szczególności komputera, z której dane można tylko odczytywać, natomiast zapis jest niemożliwy albo może wymagać dodatkowych czynności lub sprzętu (na przykład programatora).
+
+**Unified Extensible Firmware Interface (UEFI)** – interfejs pomiędzy systemem operacyjnym a firmware, opracowywany jako następca BIOS-u w komputerach osobistych.
+
+**RAM**, pamięć o dostępie swobodnym – podstawowy rodzaj pamięci cyfrowej. Choć nazwa sugeruje, że jest to każda pamięć o bezpośrednim dostępie do dowolnej komórki pamięci

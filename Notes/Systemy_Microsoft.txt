@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-08T08:03:31+01:00
+
+====== Systemy Microsoft ======
+Created czwartek 08 marzec 2018
+
+
+**MS-DOS** – system operacyjny stworzony przez firmę Microsoft na podstawie nabytego przez nią kodu źródłowego systemu QDOS stworzonego przez Seattle Computers. Jest to wersja systemu operacyjnego DOS przeznaczona dla komputerów IBM-PC.
+
+**Windows 3.1** (pierwotna nazwa kodowa: Janus) ukazał się 6 kwietnia 1992, został poszerzony o podstawową obsługę multimediów (nagrywanie dźwięku, odtwarzacz muzyki z CD) oraz o standard czcionek TrueType, co sprawiło, że system ten stał się poważną platformą do tworzenia publikacji. Umozliwiał łączenie w sieć lokalną. 
+
+
+ **Windows 95** (nazwa kodowa Chicago) – system operacyjny wyprodukowany przez Microsoft Corporation, którego oficjalna premiera miała miejsce 24 sierpnia 1995.Windows 95 jest połączeniem interfejsu użytkownika wywodzącego się z Windows 3.11 oraz systemu operacyjnego MS-DOS.
+
+Obsługa USB trafiła do Windows 98
+
+Microsoft wymyslił że systemy trzeba rozwijać w dwóch systemach NT i Desktop
+
+**Netscape Navigator -** przeglądarka internetowa stworzona przez amerykańskie przedsiębiorstwo Netscape Communications Corporation.

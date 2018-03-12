@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-12T11:56:44+01:00
+
+====== Virtual ======
+Created poniedziałek 12 marzec 2018
+
+**Linux** - rodzina uniksopodobnych systemów operacyjnych opartych na jądrze Linux. Linux jest jednym z przykładów wolnego i otwartego oprogramowania (FLOSS): jego kod źródłowy może być dowolnie wykorzystywany, modyfikowany i rozpowszechniany. Jest rozprowadzany w fomie dystrybucji. 
+
+Pliki systemowe w systemie windows domyślnie programy instalowane są w program files. W systenie windows na dysku C jest tworzony katalog users. 
+
+w systemie linux partycje oznaczane są za pomocą  [[/dev/sda1]] (pierwsza partycja pierwszego dysku)
+[[/dev/sdb1]] 
+[[/dev/sdc1]] 
+ swap - partycja  wymiany w Linuxie
+

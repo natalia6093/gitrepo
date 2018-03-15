@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-15T08:06:36+01:00
+
+====== linux ======
+Created czwartek 15 marzec 2018
+etc (pliki tekstowe)
+

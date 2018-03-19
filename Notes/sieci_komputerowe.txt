@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-19T11:59:15+01:00
+
+====== sieci komputerowe ======
+Created poniedziałek 19 marzec 2018
+
+**HOST** -  dowolna maszyna (komputer, karta sieciowa, modem itp.) uczestnicząca w wymianie danych lub udostępniająca usługi sieciowe poprzez sieć komputerową za pomocą protokołu komunikacyjnego TCP/IP oraz posiadająca własny adres IP.
+
+Rodzaje host-ów:
+- niektóre hosty są klientami  (korzystają z usług)
+-  a niektóre serwerami(udostepnia usługi)
+
+Żeby hosty widzaiały się w sieci w sensie fizycznym są **switch**. Wejścia od kabla który jest stosowany do podłaczenia urządzenia do swich`a. Kabel ten jest zakończony wtyczką RJ45. Swich tworzy sieć w topologi gwaizdy. ńie zapewnia polączenia między miedzy różnymi sieciami, tworzy  natomiast połączenia lokalne.
+
+**Router**- najczęściej zawiera wbudowany swich, potry swicha oznaczone są na routerze **LAN**, router ma **WAN**(sieć rozległa). 
+
+**Sieć szkieletowa** -  sieć telekomunikacyjna, w tym sieć komputerowa, przez którą przesyłana jest największa liczba informacji. Łączy zwykle mniejsze sieci (sieci lokalne), grupy robocze, przełączniki, sieci rozległe. Urządzenia wchodzące w strukturę sieci szkieletowej z reguły odpowiedzialne są za funkcjonowanie całej sieci na określonym obszarze.
+
+**Żeby urzadzenie podłączyć do sieci musi mieć:**
+- adres IP
+- domyślna trasa
+- adres serwera DNS
+
+Reguły komunikacji w sieciach komputerowych wyznaczone są przez **protokoły**. najwazniejszym protokołem jest **protokół TCP/IP.**
+1.DNS
+2. http
+3. ftp (sftp- wersja bezpieczna)
+
+Logowanie
+Uwierzytelnianie
+Mechanizm podwójnego uwierzytelnienia

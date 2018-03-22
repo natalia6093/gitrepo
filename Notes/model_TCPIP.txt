@@ -4,3 +4,7 @@ Creation-Date: 2018-03-20T09:58:05+01:00
 
 ====== model TCPIP ======
 Created wtorek 20 marzec 2018
+
+192.168.3.**255 **adres broadcast(adres rozgłoszeniowy)
+adresy IP dzielą sie na lokalne i publiczne
+Network Adress Translation (NAT)

@@ -2,7 +2,6 @@
  * petle.cpp
  */
 
-
 #include <iostream>
 #include <cstdlib>
 
@@ -17,6 +16,23 @@ void wypelnij(int tab[], int ile, int maks){
         }
 }
 
+void drukuj(int tab[], int ile){
+    int i = 0;
+    int licznik = 0;
+    for (i = 0; i < ile; i++)
+    {
+        cout << tab[i] << " ";
+        if(tab[i]%2 == 0) {
+            
+            licznik++;
+            }
+        
+        }
+    cout << endl;
+    cout << "Liczb parzystych " << licznik << endl;
+    
+}
+
 
 int main(int argc, char **argv)
 {
@@ -24,22 +40,11 @@ int main(int argc, char **argv)
     int ile = 75;
     int maks = 200;
 	int liczby[ile];
-    int i = 0;
-    int licznik = 0;
     
     wypelnij(liczby, ile, maks);
-        
-    for (i = 0; i < 50; i++)
-    {
-        cout << liczby[i] << " ";
-        if(liczby[i]%2 == 0) {
-            
-            licznik++;
-            }
-        
-        }
-    cout << endl;
-    cout << "Liczb parzystych: "<< licznik;
+    drukuj(liczby,ile);   
+    
+  
     
 	return 0;
 }

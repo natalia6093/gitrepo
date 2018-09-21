@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-21T11:55:44+02:00
+
+====== projektowanie i normalizacja ======
+Created piątek 21 września 2018
+
+__Normalizacja__ to bezstratny proces organizowania danych w tabelach mający na celu zmniejszenie ilości danych składowanych w bazie oraz wyeliminowanie potencjalnych anomalii opisanych powyżej. dokonujemy jej w 3 krokach:
+**1)mówi o atomowości danych ( jedna kolumna powinna przechowywać jeden typ informacji)**
+Mówimy, że tabela (encja) jest w pierwszej postaci normalnej, kiedy wiersz przechowuje informacje o pojedynczym obiekcie, nie zawiera kolekcji, posiada klucz główny (kolumnę lub grupę kolumn jednoznacznie identyfikujących go w zbiorze) a dane są atomowe. Zobaczmy, jak będzie wyglądała nasza struktura, jeśli spróbujemy doprowadzić ją do 1NF
+**2) każda tabela powinna przechowywać dane dotyczące tylko konkretnej klasy obiektów(podział jednego źródła na wiele)**
+**3)kolumna informacyjna nie należąca do klucza nie zależy też od innej kolumny informacyjnej, nie należącej do klucza.**

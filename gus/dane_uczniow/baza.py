@@ -6,10 +6,13 @@ import csv
 
 
 def czytaj_dane(plik, separator=","):
+    dane = []  # pusta lista
     with open (plik, newline='', encoding='utf-8') as plikcsv:
         tresc = csv.reader(plikcsv, delimiter=separator)
-    print(tresc)
-
+        for rekord in tresc:
+            dane.append(rekord)
+    print (dane)
+    
 
 def main(args):
     czytaj_dane('nazwiska.txt', ' ')

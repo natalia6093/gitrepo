@@ -17,9 +17,9 @@ def czytaj_dane(plik, separator=","):
 def main(args):
     con = sqlite3.connect('baza.db')
     cur = con.cursor() # obietk tzw. kursora
-    
-    with open('szkola.sql', 'r') as plik:
-        pass
+    czytaj_dane('nazwiska.txt', ' ' )
+    #with open('szkola.sql', 'r') as plik:
+    #   pass
     
     #czytaj_dane('nazwiska.txt', ' ')
     #czytaj_dane('dane-osobowe.txt', '\t')

@@ -5,7 +5,7 @@ Nr_ucz.,Dzien,Miesiac,Rok,M_urodzenia,Wojewodztwo
 9217,28,9,82,Gdańsku,pomorskie
 9224,3,2,82,Gdańsku,pomorskie
 9231,7,7,82,Gdańsku,pomorskie
-9233,24,2,82,Dąbrowie,Białostockiej,podlaskie
+9233,24,2,82,Dąbrowie Białostockiej,podlaskie
 9234,10,8,82,Gdańsku,pomorskie
 9241,16,11,82,Gdańsku,pomorskie
 9248,22,6,82,Gdańsku,pomorskie
@@ -13,7 +13,7 @@ Nr_ucz.,Dzien,Miesiac,Rok,M_urodzenia,Wojewodztwo
 9257,27,11,82,Gdańsku,pomorskie
 9265,7,12,82,Gdańsku,pomorskie
 9291,9,11,82,Gdańsku,pomorskie
-9299,8,1,82,Międzyrzecu,Podlaskim,podlaskie
+9299,8,1,82,Międzyrzecu Podlaskim,podlaskie
 9311,11,9,82,Gdańsku,pomorskie
 9327,5,5,82,Gdańsku,pomorskie
 9343,14,10,82,Gdańsku,pomorskie
@@ -33,7 +33,7 @@ Nr_ucz.,Dzien,Miesiac,Rok,M_urodzenia,Wojewodztwo
 9494,15,4,82,Gdańsku,pomorskie
 9504,8,3,84,Gdańsku,pomorskie
 9551,29,11,83,Gdańsku,pomorskie
-9562,25,8,83,Pruszczu,Gdańskim,pomorskie
+9562,25,8,83,Pruszczu Gdańskim,pomorskie
 9566,27,1,83,Gdańsku,pomorskie
 9567,27,5,83,Gdańsku,pomorskie
 9568,21,11,83,Gdańsku,pomorskie
@@ -42,7 +42,7 @@ Nr_ucz.,Dzien,Miesiac,Rok,M_urodzenia,Wojewodztwo
 9595,30,8,83,Gdańsku,pomorskie
 9605,18,10,83,Gdańsku,pomorskie
 9607,25,8,83,Gdańsku,pomorskie
-9611,4,2,83,Pruszczu,Gdańskim,pomorskie
+9611,4,2,83,Pruszczu Gdańskim,pomorskie
 9614,21,10,83,Gdańsku,pomorskie
 9621,22,11,83,Gdańsku,pomorskie
 9643,3,3,83,Gdańsku,pomorskie
@@ -55,7 +55,7 @@ Nr_ucz.,Dzien,Miesiac,Rok,M_urodzenia,Wojewodztwo
 9705,15,7,83,Sycowiu,dolnośląskie
 9708,9,8,83,Gdańsku,pomorskie
 9710,9,2,83,Gdańsku,pomorskie
-9714,27,4,83,Pruszczu,Gdańskim,pomorskie
+9714,27,4,83,Pruszczu Gdańskim,pomorskie
 9716,7,7,83,Gdańsku,pomorskie
 9745,20,6,83,Gdańsku,pomorskie
 9749,14,7,83,Gdańsku,pomorskie
@@ -63,7 +63,7 @@ Nr_ucz.,Dzien,Miesiac,Rok,M_urodzenia,Wojewodztwo
 9754,24,8,83,Gdańsku,pomorskie
 9770,27,10,83,Gdańsku,pomorskie
 9779,17,9,83,Gdańsku,pomorskie
-9788,7,3,83,Pruszczu,Gdańskim,pomorskie
+9788,7,3,83,Pruszczu Gdańskim,pomorskie
 9802,9,5,82,Gdańsku,pomorskie
 9802,13,3,84,Gdańsku,pomorskie
 9804,5,11,84,Gdańsku,pomorskie
@@ -167,7 +167,7 @@ Nr_ucz.,Dzien,Miesiac,Rok,M_urodzenia,Wojewodztwo
 10019,25,7,84,Gdańsku,pomorskie
 10020,11,10,84,Gdańsku,pomorskie
 10021,3,1,84,Gdańsku,pomorskie
-10022,5,1,84,Bielsku,Podlaskim,podlaskie
+10022,5,1,84,Bielsku Podlaskim,podlaskie
 10024,5,7,84,Gdańsku,pomorskie
 10025,4,6,84,Gdańsku,pomorskie
 10026,10,4,84,Gdańsku,pomorskie

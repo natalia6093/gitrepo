@@ -26,8 +26,8 @@ def main(args):
     ### KONFIGURACJA ###
     baza_nazwa = 'uczniowie'
     tabele = ['uczniowie', 'klasy', 'przedmioty', 'oceny']
-    roz = '.txt'
-    naglowki = True
+    roz = '.csv'
+    naglowki = False
     ####################
     
     con = sqlite3.connect(baza_nazwa + '.db')

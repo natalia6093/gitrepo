@@ -6,10 +6,13 @@ import sqlite3
 
 def kwerenda1(cur):
     cur.execute("""
-        SELECT klasa, nazwisko, imie FROM klasy
+        SELECT  klasa, COUNT(nazwisko) AS ilu FROM klasy
         INNER JOIN uczniowie ON klasy.id=uczniowie.id_klasa
+        GROUP BY klasa
+        ORDER BY ilu DESC
     """)
-     # ~SELECT nazwisko, imie1, dzien, miesiac, rok FROM nazwiska
+        #ORDER BY klasa ASC
+        # ~SELECT nazwisko, imie1, dzien, miesiac, rok FROM nazwiska
         # ~INNER JOIN dane_osobowe 
         # ~ON nazwiska.nr_ucznia=dane_osobowe.nr_ucznia
         # ~WHERE nazwiska.nr_ucznia=9201

@@ -6,7 +6,8 @@ import sqlite3
 
 def kwerenda1(cur):
     cur.execute("""
-        SELECT AVG(pol) FROM oceny
+        SELECT klasa, nazwisko, imie FROM klasy
+        INNER JOIN uczniowie ON klasy.id=uczniowie.id_klasa
     """)
      # ~SELECT nazwisko, imie1, dzien, miesiac, rok FROM nazwiska
         # ~INNER JOIN dane_osobowe 
@@ -20,8 +21,8 @@ def kwerenda1(cur):
 
 def main(args):
     ### KONFIGURACJA ###
-    baza_nazwa = 'szkola'
-    tabele = ['nazwiska', 'dane_osobowe', 'oceny']
+    baza_nazwa = 'uczniowie'
+    tabele = ['uczniowie', 'klasy', 'przedmioty', 'oceny']
     roz = '.txt'
     naglowki = True
     ####################

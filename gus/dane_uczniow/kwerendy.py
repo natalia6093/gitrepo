@@ -7,10 +7,15 @@ import sqlite3
 def kwerenda1(cur):
     cur.execute("""
         SELECT nazwisko, imie1, dzien, miesiac, rok FROM nazwiska
-        INNER JOIN dane_osobowe 
+        INNER JOIN dane_osobowe
         ON nazwiska.nr_ucznia=dane_osobowe.nr_ucznia
-        WHERE nazwiska.nr_ucznia=9201
+        WHERE nazwiska.nr_ucznia=(SELECT nr_ucznia FROM nazwiska WHERE nazwisko='Gryczon' AND imie1='Agata')
+       
     """)
+     # ~SELECT nazwisko, imie1, dzien, miesiac, rok FROM nazwiska
+        # ~INNER JOIN dane_osobowe 
+        # ~ON nazwiska.nr_ucznia=dane_osobowe.nr_ucznia
+        # ~WHERE nazwiska.nr_ucznia=9201
     #        SELECT * FROM nazwiska WHERE nazwisko LIKE 'G%'
     wyniki = cur.fetchall() #pobranie wszystkich rekordów na raz
     for row in wyniki:

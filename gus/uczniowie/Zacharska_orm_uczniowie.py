@@ -2,56 +2,64 @@
 # -*- coding: utf-8 -*-
 #
 #  orm_peewee.py
+#  
 
 import os
-from peewee import *
+from uczniowie_model import * 
+import csv
 
-baza_nazwa = 'test.db'
-baza = SqliteDatabase(baza_nazwa)  # instancja bazy
-
-### MODELE #
-class KlasaBaza(Model):
-     class Meta:
-        database = baza
-
-class Uczen(KlasaBaza):
-    imie = CharField(null=False)
-    nazwisko = CharField(null=False)
-    plec = BooleanField()
-    egzhum = FloatField(default=0)
-    egzmat = FloatField(default=0)
-    egzjez = FloatField(default=0)
-    klasa = ForeignKeyField(Klasa)
-   
-class Klasa(KlasaBaza):
-    klasa = CharField(null=False)
-    roknaboru = IntegerField(default=0)
-    rokmatury = IntegerField(default=0)
-            
-class Przedmiot(KlasaBaza):
-    przedmiot = CharField(null=False)
-    imie_naucz = CharField(null=False)
-    nazwisko_naucz = CharField(null=False)
-    plec_naucz = BooleanField()
-    klasa = ForeignKeyField(Klasa, related_name='wyniki')
+def czy_jest(plik):
+    if not os.path.isfile(plik):
+        print("Plik {} nie istnieje!".format(plik))
+        return False
+    return True
     
-class Ocena(KlasaBaza):
-    datad = DateField(null=False)
-    ocena = FloatField(default=0)
-    przedmiot = ForeignKeyField(Przedmiot, related_name='oceny')
-    przedmiot = ForeignKeyField(Uczen, related_name='oceny')
+def czytaj_dane(plik, separator=","):
+    dane = []  # pusta lista na rekordy
     
+    if not czy_jest(plik):
+        return dane
     
+    with open(plik, newline='', encoding='utf-8') as plikcsv:
+        tresc = csv.reader(plikcsv, delimiter=separator, skipinitialspace=True)
+        for rekord in tresc:
+            dane.append(tuple(rekord))
+    
+    return dane
+    
+def dodaj_dane(dane):
+    for model, plik in dane.items():
+        print(model._meta.fields)
+        pola = [pole for pole in model._meta.fields]
+        pola.pop(0)
+        print(pola)
+        
+        wpisy = czytaj_dane(plik + '.csv')
+        model.insert_many(wpisy, fields=pola).execute()
         
 def main(args):
     
     if os.path.exists(baza_nazwa):
         os.remove(baza_nazwa)
     baza.connect()  # połączenie z bazą
-    baza.create_tables([Uczen, Klasa, Przedmiot, Ocena])   #mapowanie ORM (odwzorować)
+    baza.create_tables([Klasa, Uczen, Przedmiot, Ocena])   #mapowanie ORM (odwzorować)
+    
+    dane = {
+        Klasa: 'klasy',
+        Uczen: 'uczniowie',
+        Przedmiot: 'przedmioty',
+        Ocena: 'oceny'
+    
+    }
+    
+    
+    dodaj_dane(dane)
+    
+    baza.commit()
+    baza.close()
     
     return 0
 
 if __name__ == '__main__':
     import sys
-sys.exit(main(sys.argv))
+    sys.exit(main(sys.argv))

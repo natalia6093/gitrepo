@@ -63,11 +63,23 @@ def kw05():
     )
     for obj in query:
         print(obj.klasa.klasa, obj.ile)
+        
+def kw06():
+    """średnia ocen z przedmiotu"""
+    fn.AVG()
+    query = (Ocena
+        .select(Ocena.przedmiot.przedmiot, fn.AVG(Ocena.ocena).alias('srednia'))
+        .join(Przedmiot)
+        .group_by(Ocena.przedmiot.przedmiot)
+        .order_by(SQL('srednia').desc())
+    )
+    for obj in query:
+        print(obj.przedmiot.przedmiot, obj.srednia)
 
 def main(args):
     baza.connect()
     
-    kw05()
+    kw06()
     
     baza.close()
     return 0

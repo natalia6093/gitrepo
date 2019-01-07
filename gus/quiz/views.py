@@ -33,7 +33,8 @@ def quiz():
         for pid, oid in request.form.items():
             if Odpowiedz().get(Odpowiedz.id == int(oid)).odpok:
                 wynik += 1
-        
+        flash('Poprawnych odpowoiedzi: {}'. format(wynik), 'info')
+        return redirect(url_for('hello'))
     
     pytania = Pytanie().select().join(Odpowiedz).distinct()
     return render_template('quiz.html', pytania=pytania)

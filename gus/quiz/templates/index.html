@@ -9,6 +9,7 @@
     <title>Aplikacja QUIZ</title>
     <style type="text/css">
         #menu li { display: inline; margin-left: 1em; }
+        .info { color: blue: border: 1px solid lightblue; paddung: 0,5em}
     </style>
 </head>
 
@@ -20,6 +21,15 @@
     </ul>
 
     <h1>Aplikacja QUIZ</h1>
+    
+    {% with komunikaty = get_flashed_messages(with_categories=true) %}
+    {% if komunikaty %}
+        {% for kat, kom in komunikaty %}
+        <p class="{{kat}}">{{kom}}</p>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    
     <p>Pytania i odpowiedzi</p>
 
 </body>

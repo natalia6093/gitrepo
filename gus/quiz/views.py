@@ -87,5 +87,8 @@ def page_not_found(e):
 @app.route("/usun/<int:pid>", methods=['GET', 'POST'])
 def usun(pid):
     p = get_or_404(pid)
-
+    if request.methhod == 'POST':
+        flash("Usunieto pytanie: {}.format(p.pytanie)")
+         for o in Odpowiedz.select().where(Odpowiedz.pytanie == p.id):
+        
     return render_template('usun.html', pytanie=p)

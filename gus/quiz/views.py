@@ -5,6 +5,7 @@
 
 from flask import Flask
 from flask import render_template, request, flash, redirect, url_for
+from flask import abort
 from modele import Kategoria, Pytanie, Odpowiedz
 from forms import *
 

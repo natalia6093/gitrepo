@@ -35,13 +35,23 @@ void zmienNazwe2(char t1[], char t2[]) {
     strcpy(t2, t1);
     wsk = strstr(t2,".txt");
     strncpy(wsk, ".bak", 4);
-    
 }
 
-void liczZnaki(char nazwa[]) {
+int liczZnaki(char nazwa[]) {
     char kopia[15];
     zmienNazwe2(nazwa, kopia);
     cout << kopia;
+    
+    //otwieranie pliku
+    ifstream wejscie(nazwa);
+    if (!wejscie) { cout << "Brak pliku!"; return 1; }
+    
+    ofstream wyjscie(kopia)
+    if (!wyjscie) { cout << "Błąd pliku!"; return 1; }
+    
+    char znak;
+    int ile, ileal, ilenum, ilealnum;
+    ile = ileal = ilenum = ilealnum = 0;
 }
 
 

@@ -19,6 +19,10 @@ void zmienNazwe(char t1[], char t2[]) {
         t2[i] = t1[i];
         i++;
     }
+    t2[i]='.';
+    t2[++i]='b';
+    t2[++i]='a';
+    t2[++i]='k';
 }
 
 

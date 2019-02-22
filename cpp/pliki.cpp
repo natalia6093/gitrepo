@@ -52,6 +52,22 @@ int liczZnaki(char nazwa[]) {
     char znak;
     int ile, ileal, ilenum, ilealnum;
     ile = ileal = ilenum = ilealnum = 0;
+    
+    while(!wejscie.eof()) {
+        wejscie.get(znak); // odczytanie poj. znaku
+        if (wejscie) ile++;
+        if (wejscie && isalpha(znak)) ileal++; //liczymy litery
+        if (wejscie && isdigit(znak)) ilenum++; //liczymy litery
+        if (wejscie && isalnum(znak)) {
+            ileal++; //liczymy litery
+            wyjscie.put(znak) // zapisanie znaku do pliku
+        }
+    }
+    
+    wejscie.close(); wyjscie.close();
+    cout << "Znaków: " << ile << endl;
+    cout << "Liter: " << ile << endl;
+    cout << "Cyfr: " << ile << endl;
 }
 
 

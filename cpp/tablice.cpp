@@ -5,16 +5,17 @@
 #include <iostream>
 using namespace std;
 
-void wprowadz(float *tab, int ile) {
+void wprowadz(float tb[], int  ile) {
+    cout << "Podaj oceny:\n ";
     for (int i=0; i<ile; i++) {
-        cout << "Ocena: ";
-        cin >> *(tab+i);
+        cin >> tb[i];
     }
 }
     
-void drukuj(float *tab, int ile) {
+void drukuj(float tb[], int  ile) {
+    cout << "Podane oceny";
     for (int i=0; i<ile; i++) {
-        cout << *(tab+i) << " ";
+        cout << tb[i] << " ";
     }
     cout << endl;
 }
@@ -32,7 +33,7 @@ int tab1W() {
     }
     wprowadz(tb, ile);
     drukuj(tb, ile);
-    return 0;
+    return 1;
 }
 
    

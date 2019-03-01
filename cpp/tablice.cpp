@@ -3,6 +3,7 @@
  */
  
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 void wprowadz(float tb[], int  ile) {
@@ -20,27 +21,69 @@ void drukuj(float tb[], int  ile) {
     cout << endl;
 }
 int tab1W() {
-    float *tb = NULL;
+    float *tab = NULL;
     int ile;
-    cout << "Ile podasz ocen? " << endl;
+    cout << "Ile podasz ocen? ";
     cin >> ile;
-    
     try {
-        tb = new float[ile];
+        tab = new float[ile];
     } catch(bad_alloc) {
         cout << "Za mało pamięci!";
         return 1;
     }
-    wprowadz(tb, ile);
-    drukuj(tb, ile);
-    return 1;
+    
+    wprowadz(tab, ile);
+    drukuj(tab, ile);
+    return 0;
 }
 
-   
+void wypelnij2W(int *tb[], int w, int k) {
+    srand(time(NULL));
+    for(int i=0; i<w; i++)
+        for(int j=0; j<k; j++)
+            tb[i][j] = rand() % 101;
+}
+
+void drukuj2W(int *tb[], int w, int k) {
+    for(int i=0; i<w; i++) {
+        for(int j=0; j<k; j++)
+            cout << setw(5) << tb[i][j];
+        cout << endl;
+}
+}
+
+
+int tab2W() {
+    int w, k;
+    cout << "Liczba wierszy i kolumn: ";
+    cin >> w >> k;
+    int **tab; // wskaźnik do wskaźnika
+    try {
+        tab = new int *[w];
+    } catch(bad_alloc) {
+        cout << "Za mało pamięci!";
+        return 1;
+    }
+    
+    for (int i=0; i<w; i++) {
+        try {
+            tab[i] = new int[k];
+        } catch(bad_alloc) {
+            cout << "Za mało pamięci!";
+            return 1;
+        }
+    }
+    
+    wypelnij2W(tab, w, k);
+    drukuj2W(tab, w, k);
+    return 0;
+}
+
 
 int main(int argc, char **argv)
 {
-	tab1W();
+	//tab1W();
+    tab2W();
 	return 0;
 }
 

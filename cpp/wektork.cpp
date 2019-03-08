@@ -21,13 +21,19 @@ void Wektor::pobierz(int nr) {
 }
 
 void Wektor::wypisz() {
+    cout << "Wektor nr " << nr << " : ";
     cout << "[" << x << "," << y << "]" << endl;
+    
 }
+
 
 int main(int argc, char **argv)
 {
-	Wektor w1;
+	Wektor w1, w2;
     w1.pobierz(1);
+    w2.pobierz(2);
+    w1.wypisz();
+    w2.wypisz();
 	return 0;
 }
 

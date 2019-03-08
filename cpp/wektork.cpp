@@ -12,16 +12,18 @@ class Wektor {
     public:
         void pobierz(int);
         void wypisz();
+        int nrw;
 };
 
 void Wektor::pobierz(int nr) {
+    nrw = nr;
     cout << "Podaj współrzędne " << nr << " wektora: " << endl;
     cin >> x;
     cin >> y;
 }
 
 void Wektor::wypisz() {
-    cout << "Wektor nr " << nr << " : ";
+    cout << "Wektor nr " << nrw << " : ";
     cout << "[" << x << "," << y << "]" << endl;
     
 }
